@@ -1,0 +1,21 @@
+{"asctime": "2025-10-03 11:21:55,594", "name": "my_script", "levelname": "DEBUG", "filename": "downloader.py", "message": "Debugging details here"}
+{"asctime": "2025-10-03 11:21:55,595", "name": "my_script", "levelname": "INFO", "filename": "downloader.py", "message": "Starting job"}
+{"asctime": "2025-10-03 11:21:55,595", "name": "my_script", "levelname": "ERROR", "filename": "downloader.py", "message": "Something failed"}
+{"asctime": "2025-10-03 11:30:04,107", "name": "my_script", "levelname": "DEBUG", "filename": "downloader.py", "message": "Namespace(url='https://www.cyber.gov.au/ism/oscal/v2025.09.15/artifacts/ISM_catalog.json', output='/')"}
+{"asctime": "2025-10-03 11:30:04,481", "name": "my_script", "levelname": "DEBUG", "filename": "downloader.py", "message": "\u274c Failed to download JSON: [Errno 13] Permission denied: '/ISM_catalog.json'"}
+{"asctime": "2025-10-03 11:31:20,360", "name": "my_script", "levelname": "DEBUG", "filename": "downloader.py", "message": "Namespace(url='https://www.cyber.gov.au/ism/oscal/v2025.09.15/artifacts/ISM_catalog.json', output='/')"}
+{"asctime": "2025-10-03 11:31:20,693", "name": "my_script", "levelname": "DEBUG", "filename": "downloader.py", "message": "\u274c Failed to download JSON: [Errno 13] Permission denied: '/ISM_catalog.json'"}
+{"asctime": "2025-10-03 11:32:00,886", "name": "my_script", "levelname": "DEBUG", "filename": "downloader.py", "message": "Namespace(url='https://www.cyber.gov.au/ism/oscal/v2025.09.15/artifacts/ISM_catalog.json', output='/')"}
+{"asctime": "2025-10-03 11:32:01,232", "name": "my_script", "levelname": "DEBUG", "filename": "downloader.py", "message": "\u274c Failed to download JSON: [Errno 13] Permission denied: '/ISM_catalog.json'"}
+{"asctime": "2025-10-03 11:34:22,497", "name": "my_script", "levelname": "DEBUG", "filename": "downloader.py", "message": "Namespace(url='https://www.cyber.gov.au/ism/oscal/v2025.09.15/artifacts/ISM_catalog.json', output='/')"}
+{"asctime": "2025-10-03 11:34:22,775", "name": "my_script", "levelname": "DEBUG", "filename": "downloader.py", "message": "\u2705 JSON saved to: {saved_file}"}
+{"asctime": "2025-10-03 11:34:32,596", "name": "my_script", "levelname": "DEBUG", "filename": "downloader.py", "message": "Namespace(url='https://www.cyber.gov.au/ism/oscal/v2025.09.15/artifacts/ISM_catalog.json', output='./')"}
+{"asctime": "2025-10-03 11:34:32,831", "name": "my_script", "levelname": "DEBUG", "filename": "downloader.py", "message": "\u2705 JSON saved to: {saved_file}"}
+{"asctime": "2025-10-03 11:34:43,505", "name": "my_script", "levelname": "DEBUG", "filename": "downloader.py", "message": "Namespace(url='https://www.cyber.gov.au/ism/oscal/v2025.09.15/artifacts/ISM_catalog.json', output='exit')"}
+{"asctime": "2025-10-03 11:34:43,735", "name": "my_script", "levelname": "DEBUG", "filename": "downloader.py", "message": "\u2705 JSON saved to: {saved_file}"}
+{"asctime": "2025-10-03 11:35:27,437", "name": "my_script", "levelname": "DEBUG", "filename": "downloader.py", "message": "Namespace(url='https://www.cyber.gov.au/ism/oscal/v2025.09.15/artifacts/ISM_catalog.json', output='./')"}
+{"asctime": "2025-10-03 11:35:27,651", "name": "my_script", "levelname": "DEBUG", "filename": "downloader.py", "message": "\u2705 JSON saved to: {saved_file}"}
+{"asctime": "2025-10-03 11:35:43,526", "name": "my_script", "levelname": "DEBUG", "filename": "downloader.py", "message": "Namespace(url='https://www.cyber.gov.au/ism/oscal/v2025.09.15/artifacts/ISM_catalog.json', output='./examples/')"}
+{"asctime": "2025-10-03 11:35:44,063", "name": "my_script", "levelname": "DEBUG", "filename": "downloader.py", "message": "\u2705 JSON saved to: {saved_file}"}
+{"asctime": "2025-10-03 14:22:51,033", "name": "my_script", "levelname": "DEBUG", "filename": "downloader.py", "message": "Namespace(url='https://www.cyber.gov.au/ism/oscal/v2025.09.15/artifacts/ISM_OFFICIAL_SENSITIVE-baseline_profile.json', output='./examples')"}
+{"asctime": "2025-10-03 14:22:51,209", "name": "my_script", "levelname": "DEBUG", "filename": "downloader.py", "message": "\u2705 JSON saved to: {saved_file}"}

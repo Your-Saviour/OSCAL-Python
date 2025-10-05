@@ -1,0 +1,29 @@
+
+
+services:
+  python-container:
+    build:            # folder sent to Docker build
+      dockerfile: Dockerfile
+
+    #platform: linux/amd64 d
+
+    env_file: .env
+    
+    #environment:
+    # - DO_NOT_INSTALL=${DO_NOT_INSTALL}
+    # - AUTO_INSTALL_PACKAGE=${AUTO_INSTALL_PACKAGE}
+    
+    volumes:
+      - ./logs.log:/home/appuser/logs.log
+      - ./scripts:/home/appuser/scripts
+      - ./examples:/home/appuser/examples
+
+    container_name: python-container
+
+    restart: unless-stopped
+
+    user: "10001:10001"
+  
+
+
+
