@@ -1,0 +1,16 @@
+{% macro csv_escape(value) -%}
+    "{{ value | replace('"', '""') }}"
+{%- endmacro %}
+{{ data.catalog.metadata.title }},
+{% for item in data.catalog.groups %}
+    {% for item2 in item.groups %}
+        {% for item3 in item2.groups %}
+            {% for controls in item3.controls %}
+                {% if "Guidelines" == item.title.split()[0] %}
+                    {% set applicabilities = controls.props | selectattr("name", "equalto", "applicability") | map(attribute="value") | list %}
+{{ item.title }},{{ item2.title }},{{ csv_escape(item3.title) }},{{ controls.id }},{{ controls.props[1].value }},{{ controls.props[2].value }},{% for key in ["NC","OS","P","S","TS","ML1","ML2","ML3"] %}{% if key in applicabilities %}yes{% else %}no{% endif %},{% endfor %}{{ csv_escape(controls.parts[0].prose) }}
+                {% endif %}
+            {% endfor %}
+        {% endfor %}
+    {% endfor %}
+{% endfor %}

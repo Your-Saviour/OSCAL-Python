@@ -2,7 +2,7 @@
 import json
 import argparse
 from typing import Any, Union
-import OSCAL_ISM_parser
+#import scripts.old.OSCAL_ISM_parser as OSCAL_ISM_parser
 
 def recursive_groups(data : dict, json_path : str, level : int = 0):
     level = level + 1
@@ -36,7 +36,27 @@ def main():
         data = json.load(f)
 
     
-    OSCAL_ISM_parser.main(data["catalog"], "catalog")
+    #OSCAL_ISM_parser.main(data["catalog"], "catalog")
+    print(data["catalog"].keys())
+    for item in data["catalog"]["groups"]:
+        print(item["title"])
+        if item["title"] == "Cybersecurity terminology":
+            break
+        print(item["parts"] if "parts" in item.keys() else "")
+        #print(item.keys())
+        for item2 in item["groups"]:
+            print("\t", item2["title"])
+            print(item2["parts"] if "parts" in item2.keys() else "")
+            #print("\t", item2.keys())
+            if "groups" in item2.keys():
+                for item3 in item2["groups"]:
+                    print("\t\t",item3["title"])
+                    print("\t\t", item3["parts"] if "parts" in item3.keys() else "")
+                    #print("\t\t",item3.keys())
+                    if "controls" in item3.keys():
+                        for control in item3["controls"]:
+                            print("\t"*3, control["id"])
+                            #print("\t"*3, control.keys())
 
     
 
